@@ -8,7 +8,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
     const email = document.getElementById('email').value;
 
     // Make the POST request to the server for password reset
-    fetch('/send-password-reset', {
+    fetch('http://send-password-reset', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
