@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Send an AJAX request to the server to authenticate
-    fetch('http://index', {
+    fetch('/index', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
